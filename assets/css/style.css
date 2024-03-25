@@ -519,6 +519,7 @@ a {
     transition: 0.35s;
 }
 .news__item:hover {
+    transform: translateY(-12px);
     box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.06);
 }
 .news__item:hover .news__item__body {
@@ -564,4 +565,39 @@ a {
 
 .new__item__more:hover {
     color: #2e80ce;
+}
+
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appointment__inner {
+    padding: 100px 70px;
+    background: #f6fbff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.appointment__heading::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 13.6rem;
+    height: 0.2rem;
+    background: #2e80ce;
+}
+
+.appointment__desc {
+    margin: 18px auto;
+    font-size: 1.6rem;
+    width: 61.7rem;
 }
